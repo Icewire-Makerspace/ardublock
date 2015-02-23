@@ -23,7 +23,13 @@ Usage
 
 Development
 ----
-Change the /src/main/resources/com/ardublock/block/ardublock_def.xml to add new blocks to ArduBlock
+### Add New Block
+* Add file to `src/main/java/com/ardublock/translator/block/`
+* Edit `src/main/resources/com/ardublock/block/ardublock.xml`
+* Edit `src/main/resources/com/ardublock/block/ardublock.properties`
+* Edit `src/main/resources/com/ardublock/block/block-mapping.properties`
+
+### Build and Compile
 
 	$ mvn clean package
 
