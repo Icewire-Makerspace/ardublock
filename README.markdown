@@ -23,13 +23,13 @@ Usage
 
 Development
 ----
-Add New Block
+Add new block:
 * Add file to `src/main/java/com/ardublock/translator/block/`
 * Edit `src/main/resources/com/ardublock/block/ardublock.xml`
 * Edit `src/main/resources/com/ardublock/block/ardublock.properties`
 * Edit `src/main/resources/com/ardublock/block/block-mapping.properties`
 
-Build and Compile
+Build and compile:
 
 	$ mvn clean package
 
@@ -39,11 +39,11 @@ The Visual Block environment should show up.
 
 Deploy
 ----
-Edit code of ardublock
+Build:
 
 	$ mvn clean package
 
-copy the target/ardublock-all.jar to Arduino\tools\ArduBlockTool\tool
+Copy `target/ardublock-all.jar` to `Arduino\tools\ArduBlockTool\tool`
 
 Authors
 ----
