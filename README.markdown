@@ -3,6 +3,13 @@ ArduBlock
 
 ArduBlock is a Block Programming Language for Arduino. The language and functions model closely to [Arduino Language Reference](http://arduino.cc/en/Reference/HomePage)
 
+Preliminary
+----
+* Install [Apache Maven](http://maven.apache.org/)
+* Install [JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* Add `JAVA_HOME` environment variable pointing to JDK directory (e.g., `JAVA_HOME = "C:\Program Files\Java\jdk1.8.0_31"`)
+* Clone `https://github.com/Icewire-Makerspace/openblocks.git` and run `mvn install`
+
 Installation
 ----
 The project is managed by Maven. After checking out the source for the first time, one should run the following to install Arduino's pde.jar into the local repository. 
@@ -22,17 +29,20 @@ Change the /src/main/resources/com/ardublock/block/ardublock_def.xml to add new 
 
 	$ mvn compile exec:java -Dexec.mainClass="com.ardublock.Main"
 
-The Visual Block environment should show up. Happy Hacking! ;) 
+The Visual Block environment should show up.
+
+Deploy
+----
+Edit code of ardublock
+
+	$ mvn clean package
+
+copy the target/ardublock-all.jar to Arduino\tools\ArduBlockTool\tool
 
 Authors
 ----
 * David Li taweili@gmail.com
 * HE Qichen heqichen@gmail.com
-
-
-ToDo
-----
-* Integrate the [scripting engine](http://java.sun.com/developer/technicalArticles/J2SE/Desktop/scripting/) into the language blocks for code generation
 
 License
 ----
