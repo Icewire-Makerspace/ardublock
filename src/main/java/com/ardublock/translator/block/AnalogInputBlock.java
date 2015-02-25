@@ -1,12 +1,12 @@
 package com.ardublock.translator.block;
 
 import com.ardublock.translator.Translator;
-import com.ardublock.translator.block.exception.BlockException;
 import com.ardublock.translator.block.exception.SocketNullException;
 import com.ardublock.translator.block.exception.SubroutineNotDeclaredException;
 
 public class AnalogInputBlock extends TranslatorBlock
 {
+
 	public AnalogInputBlock(Long blockId, Translator translator, String codePrefix, String codeSuffix, String label)
 	{
 		super(blockId, translator, codePrefix, codeSuffix, label);
@@ -14,18 +14,11 @@ public class AnalogInputBlock extends TranslatorBlock
 
 	public String toCode() throws SocketNullException, SubroutineNotDeclaredException
 	{
-		String ret = "analogRead(";
 		TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0);
-		if (translatorBlock instanceof NumberBlock || translatorBlock instanceof com.ardublock.translator.block.banbao.NumberBlock)
-		{
-			ret = ret + translatorBlock.toCode();
-			ret = ret + ")";
-			return codePrefix + ret + codeSuffix;
-		}
-		else
-		{
-			throw new BlockException(blockId, "analog pin# must be a number");
-		}
+		String number;
+		number = translatorBlock.toCode();
+		String ret = "analogRead(" + number + ")";
+		return codePrefix + ret + codeSuffix;
 	}
 
 }

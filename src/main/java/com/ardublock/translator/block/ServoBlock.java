@@ -2,7 +2,6 @@
 package com.ardublock.translator.block;
 
 import com.ardublock.translator.Translator;
-import com.ardublock.translator.block.exception.BlockException;
 import com.ardublock.translator.block.exception.SocketNullException;
 import com.ardublock.translator.block.exception.SubroutineNotDeclaredException;
 
@@ -17,13 +16,6 @@ public class ServoBlock extends TranslatorBlock
 	public String toCode() throws SocketNullException, SubroutineNotDeclaredException
 	{
 		TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0);
-		if (!(translatorBlock instanceof NumberBlock || translatorBlock instanceof com.ardublock.translator.block.banbao.NumberBlock))
-		{
-			throw new BlockException(this.blockId, "the Pin# of Servo must a number");
-		}
-		
-		
-		
 		String pinNumber = translatorBlock.toCode();
 		String servoName = "servo_pin_" + pinNumber;
 		
