@@ -293,7 +293,7 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="number"
 					connector-kind="socket" label="bc.pin_number">
-					<DefaultArg genus-name="banbao_IO_3" label="#3" />
+					<DefaultArg genus-name="number" label="2" />
 				</BlockConnector>
 				<BlockConnector connector-type="number"
 					connector-kind="socket" label="bc.angle">
