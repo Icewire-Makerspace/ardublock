@@ -12,6 +12,7 @@
 	<description>A Block Programming Language for Arduino</description>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.build.timestamp.format>yyyyMMdd</maven.build.timestamp.format>
 	</properties>
 	<build>
 		<plugins>
@@ -28,7 +29,7 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<version>2.2.1</version>
 				<configuration>
-					<finalName>${project.artifactId}</finalName>
+					<finalName>${project.artifactId}-${maven.build.timestamp}</finalName>
 					<archive>
 						<manifest>
 							<mainClass>com.ardublock.Main</mainClass>
