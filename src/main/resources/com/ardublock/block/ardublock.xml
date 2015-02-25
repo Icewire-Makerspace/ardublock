@@ -1039,9 +1039,6 @@
 				<BlockGenusMember>variable_digital</BlockGenusMember>
 				<BlockGenusMember>setter_variable_number</BlockGenusMember>
 				<BlockGenusMember>setter_variable_digital</BlockGenusMember>
-				<BlockGenusMember>message</BlockGenusMember>
-				<BlockGenusMember>glue_sn</BlockGenusMember>
-				<BlockGenusMember>glue_sb</BlockGenusMember>
 			</BlockDrawer>
 
 			<BlockDrawer button-color="114 147 71" name="bd.operators"
@@ -1079,6 +1076,9 @@
 				<BlockGenusMember>delay_microseconds</BlockGenusMember>
 				<BlockGenusMember>millis</BlockGenusMember>
 				<BlockGenusMember>serial_println</BlockGenusMember>
+				<BlockGenusMember>message</BlockGenusMember>
+				<BlockGenusMember>glue_sn</BlockGenusMember>
+				<BlockGenusMember>glue_sb</BlockGenusMember>
 				<BlockGenusMember>map_common</BlockGenusMember>
 				<BlockGenusMember>map</BlockGenusMember>
 				<BlockGenusMember>wire_write</BlockGenusMember>
