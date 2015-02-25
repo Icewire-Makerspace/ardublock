@@ -1034,165 +1034,6 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="banbao_IO_1" kind="data" color="208 10 16"
-			initlabel="bg.banbao_io_1" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_IO_2" kind="data" color="208 10 16"
-			initlabel="bg.banbao_io_2" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_IO_3" kind="data" color="208 10 16"
-			initlabel="bg.banbao_io_3" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_IO_4" kind="data" color="208 10 16"
-			initlabel="bg.banbao_io_4" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_IO_5" kind="data" color="208 10 16"
-			initlabel="bg.banbao_io_5" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_IO_6" kind="data" color="208 10 16"
-			initlabel="bg.banbao_io_6" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_IO_7" kind="data" color="208 60 16"
-			initlabel="bg.banbao_io_7" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_IO_8" kind="data" color="208 60 16"
-			initlabel="bg.banbao_io_8" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_IO_9" kind="data" color="208 60 16"
-			initlabel="bg.banbao_io_9" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_IO_10" kind="data" color="208 60 16"
-			initlabel="bg.banbao_io_10" editable-label="no">
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" position-type="mirror" />
-			</BlockConnectors>
-		</BlockGenus>
-		
-		
-		
-		
-		<BlockGenus name="banbao_motor_setup" kind="command" color="255 0 0" inilabel="bg.banbao_motor_setup">
-		    <description>
-		        <text>setup motor pin</text>
-		    </description>
-		    <BlockConnectors>
-		        <BlockConnector connector-type="number" connector-kind="socket" label="bc.motor_left_positive">
-		            <DefaultArg genus-name="number" label="9"/>
-		        </BlockConnector>
-		        <BlockConnector connector-type="number" connector-kind="socket" label="bc.motor_left_negative">
-		            <DefaultArg genus-name="number" label="10"/>
-		        </BlockConnector>
-		        <BlockConnector connector-type="number" connector-kind="socket" label="bc.motor_right_positive">
-		            <DefaultArg genus-name="number" label="11"/>
-		        </BlockConnector>
-		        <BlockConnector connector-type="number" connector-kind="socket" label="bc.motor_right_negative">
-		            <DefaultArg genus-name="number" label="12"/>
-		        </BlockConnector>
-		    </BlockConnectors>
-		    <Images>
-		        <Image>
-		            <FileLocation>com/ardublock/block/banbao/motor.png</FileLocation>
-		        </Image>
-		    </Images>
-		</BlockGenus>
-		
-		<BlockGenus name="banbao_go_forward" kind="command" color="255 0 0" initlabel="bg.banbao_go_forward">
-		    <description>
-		        <text>go forward</text>
-		    </description>
-		    <Images>
-		        <Image>
-		            <FileLocation>com/ardublock/block/banbao/go_forward.png</FileLocation>
-		        </Image>
-		    </Images>
-		</BlockGenus>
-		<BlockGenus name="banbao_turn_left" kind="command" color="255 0 0" initlabel="bg.banbao_turn_left">
-		    <description>
-		        <text>turn left</text>
-		    </description>
-		    <Images>
-		        <Image>
-		            <FileLocation>com/ardublock/block/banbao/turn_left.png</FileLocation>
-		        </Image>
-		    </Images>
-		</BlockGenus>
-		<BlockGenus name="banbao_turn_right" kind="command" color="255 0 0" initlabel="bg.banbao_turn_right">
-		    <description>
-		        <text>turn right</text>
-		    </description>
-		    <Images>
-		        <Image>
-		            <FileLocation>com/ardublock/block/banbao/turn_right.png</FileLocation>
-		        </Image>
-		    </Images>
-		</BlockGenus>
-		<BlockGenus name="banbao_go_backward" kind="command" color="255 0 0" initlabel="bg.banbao_go_backward">
-		    <description>
-		        <text>go backward</text>
-		    </description>
-		    <Images>
-		        <Image>
-		            <FileLocation>com/ardublock/block/banbao/go_backward.png</FileLocation>
-		        </Image>
-		    </Images>
-		</BlockGenus>
-		<BlockGenus name="banbao_stop" kind="command" color="255 0 0" initlabel="bg.banbao_stop">
-		    <description>
-		        <text>stop</text>
-		    </description>
-		    <Images>
-		        <Image>
-		            <FileLocation>com/ardublock/block/banbao/stop.png</FileLocation>
-		        </Image>
-		    </Images>
-		</BlockGenus>
-		
 		<!-- seeedstudio grove -->
 
 		<BlockGenus name="seeed_joystick" kind="data" color="0 255 0"
@@ -1754,20 +1595,6 @@
 			<FamilyMember>digital-on</FamilyMember>
 			<FamilyMember>digital-off</FamilyMember>
 		</BlockFamily>
-		<BlockFamily>
-		    <FamilyMember>banbao_IO_1</FamilyMember>
-		    <FamilyMember>banbao_IO_2</FamilyMember>
-		    <FamilyMember>banbao_IO_3</FamilyMember>
-		    <FamilyMember>banbao_IO_4</FamilyMember>
-		    <FamilyMember>banbao_IO_5</FamilyMember>
-		    <FamilyMember>banbao_IO_6</FamilyMember>
-		</BlockFamily>
-		<BlockFamily>
-		    <FamilyMember>banbao_IO_7</FamilyMember>
-		    <FamilyMember>banbao_IO_8</FamilyMember>
-		    <FamilyMember>banbao_IO_9</FamilyMember>
-		    <FamilyMember>banbao_IO_10</FamilyMember>
-		</BlockFamily>
 	</BlockFamilies>
 
 	<BlockDrawerSets>
@@ -1803,16 +1630,6 @@
 				<BlockGenusMember>digital-low</BlockGenusMember>
 				<BlockGenusMember>true</BlockGenusMember>
 				<BlockGenusMember>false</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_1</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_2</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_3</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_4</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_5</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_6</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_7</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_8</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_9</BlockGenusMember>
-				<BlockGenusMember>banbao_IO_10</BlockGenusMember>
 				<BlockGenusMember>variable_number</BlockGenusMember>
 				<BlockGenusMember>variable_digital</BlockGenusMember>
 				<BlockGenusMember>setter_variable_number</BlockGenusMember>
@@ -1869,14 +1686,6 @@
 				<BlockGenusMember>xcj_ms_digital_read</BlockGenusMember> <BlockGenusMember>xcj_ms_digital_write</BlockGenusMember> 
 				</BlockDrawer> -->
 	
-			<BlockDrawer button-color="255 0 0 " name="bd.BanBao">
-			    <BlockGenusMember>banbao_motor_setup</BlockGenusMember>
-			    <BlockGenusMember>banbao_go_forward</BlockGenusMember>
-			    <BlockGenusMember>banbao_turn_left</BlockGenusMember>
-			    <BlockGenusMember>banbao_turn_right</BlockGenusMember>
-			    <BlockGenusMember>banbao_go_backward</BlockGenusMember>
-			    <BlockGenusMember>banbao_stop</BlockGenusMember>
-			</BlockDrawer>
 <!-- 
 			<BlockDrawer button-color="0 255 0" name="bd.seeedstudio">
 				<BlockGenusMember>seeed_joystick</BlockGenusMember>
