@@ -1034,47 +1034,6 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<!-- seeedstudio grove -->
-
-		<BlockGenus name="seeed_joystick" kind="data" color="0 255 0"
-			initlabel="bg.seeed_joystick">
-			<description>
-				<text>Read analog value from analog pin</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="socket">
-					<DefaultArg genus-name="number" label="1" />
-				</BlockConnector>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" />
-			</BlockConnectors>
-			<Images>
-				<Image>
-					<FileLocation>com/ardublock/block/seeedstudio/COM90133P.jpg</FileLocation>
-				</Image>
-			</Images>
-		</BlockGenus>
-
-		<BlockGenus name="seeed_joystick_button" kind="data" color="0 255 0"
-			initlabel="bg.seeed_joystick_button">
-			<description>
-				<text>Read analog value from analog pin</text>
-			</description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="socket">
-					<DefaultArg genus-name="number" label="1" />
-				</BlockConnector>
-				<BlockConnector connector-type="boolean"
-					connector-kind="plug" />
-			</BlockConnectors>
-			<Images>
-				<Image>
-					<FileLocation>com/ardublock/block/seeedstudio/COM90133P.jpg</FileLocation>
-				</Image>
-			</Images>
-		</BlockGenus>
 		
 		<!--************************************************************* linksprite_LinkerKit*******************************************************-->
 
@@ -1686,12 +1645,6 @@
 				<BlockGenusMember>xcj_ms_digital_read</BlockGenusMember> <BlockGenusMember>xcj_ms_digital_write</BlockGenusMember> 
 				</BlockDrawer> -->
 	
-<!-- 
-			<BlockDrawer button-color="0 255 0" name="bd.seeedstudio">
-				<BlockGenusMember>seeed_joystick</BlockGenusMember>
-				<BlockGenusMember>seeed_joystick_button</BlockGenusMember>
-			</BlockDrawer>
- -->
  <!-- 
 			<BlockDrawer button-color="135 206 235" name="bd.linksprite_LinkerKit">
 				<BlockGenusMember>ls_10mmLEDModule</BlockGenusMember>
