@@ -167,7 +167,7 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="number"
 					connector-kind="socket" label="#">
-					<DefaultArg genus-name="number" label="1" />
+					<DefaultArg genus-name="number" label="2" />
 				</BlockConnector>
 				<BlockConnector connector-type="boolean"
 					connector-kind="plug" />
