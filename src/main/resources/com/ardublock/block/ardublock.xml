@@ -231,7 +231,7 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="number"
 					connector-kind="socket" label="bc.variable">
-					<DefaultArg genus-name="variable_number" label="var name" />
+					<DefaultArg genus-name="variable_number" label="variable name" />
 				</BlockConnector>
 				<BlockConnector connector-type="number"
 					connector-kind="socket" label="bc.value">
