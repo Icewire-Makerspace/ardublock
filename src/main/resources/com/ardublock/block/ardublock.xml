@@ -182,7 +182,7 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="number"
 					connector-kind="socket" label="#">
-					<DefaultArg genus-name="banbao_IO_7" label="#7" />
+					<DefaultArg genus-name="number" label="0" />
 				</BlockConnector>
 				<BlockConnector connector-type="number"
 					connector-kind="plug" />
