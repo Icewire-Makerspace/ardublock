@@ -159,6 +159,18 @@
 			</BlockConnectors>
 		</BlockGenus>
 
+		<BlockGenus name="setup" kind="command" color="255 221 0"
+			initlabel="bg.setup" is-starter="yes" is-terminator="yes"
+			label-unique="yes">
+			<description>
+				<text>Do each block in here once before the loop starts</text>
+			</description>
+			<BlockConnectors>
+				<BlockConnector connector-type="cmd" connector-kind="socket"
+					label="bc.once" />
+			</BlockConnectors>
+		</BlockGenus>
+
 		<BlockGenus name="pin-read-digital" kind="data" color="77 191 169"
 			initlabel="bg.pin-read-digital">
 			<description>
@@ -1008,6 +1020,7 @@
 			<BlockDrawer name="bd.control" type="factory" is-open="yes"
 				button-color="252 203 125">
 				<BlockGenusMember>loop</BlockGenusMember>
+				<BlockGenusMember>setup</BlockGenusMember>
 				<BlockGenusMember>ifelse</BlockGenusMember>
 				<BlockGenusMember>if</BlockGenusMember>
 				<BlockGenusMember>while</BlockGenusMember>
