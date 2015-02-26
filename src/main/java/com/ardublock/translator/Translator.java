@@ -47,7 +47,7 @@ public class Translator
 		reset();
 	}
 	
-	public String genreateHeaderCommand()
+	public String generateHeaderCommand()
 	{
 		StringBuilder headerCommand = new StringBuilder();
 		

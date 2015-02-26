@@ -109,7 +109,7 @@ public class GenerateCodeButtonListener implements ActionListener
 				code.append(translator.translate(subroutineBlock.getBlockID()));
 			}
 			
-			code.insert(0, translator.genreateHeaderCommand());
+			code.insert(0, translator.generateHeaderCommand());
 		}
 		catch (SocketNullException e1)
 		{
