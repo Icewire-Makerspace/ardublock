@@ -16,15 +16,7 @@ public class TranslatorBlockFactory
 	
 	public TranslatorBlockFactory()
 	{
-		shortClassName = new HashMap<String, String>();
-		shortClassName.put("analogInput", "com.ardublock.translator.block.AnalogInputBlock");
-		shortClassName.put("digitalInput", "com.ardublock.translator.block.DigitalInputBlock");
-		shortClassName.put("analogOutput", "com.ardublock.translator.block.AnalogOutputBlock");
-		shortClassName.put("digitalOutput", "com.ardublock.translator.block.DigitalOutputBlock");
-		shortClassName.put("inversedDigitalInput", "com.ardublock.translator.block.InversedDigitalInputBlock");
-		shortClassName.put("inversedDigitalOutput", "com.ardublock.translator.block.InversedDigitalOutputBlock");
-		shortClassName.put("inversedAnalogOutput", "com.ardublock.translator.block.InversedAnalogOutputBlock");
-		shortClassName.put("servo", "com.ardublock.translator.block.ServoBlock");
+
 	}
 	
 	
@@ -34,11 +26,6 @@ public class TranslatorBlockFactory
 		
 		String className = PropertiesReader.getValue(blockName, BLOCK_MAPPING);
 		//System.out.println("className: " + className);
-		String longName = shortClassName.get(className);
-		if (longName != null)
-		{
-			className = longName;
-		}
 		
 		try
 		{
