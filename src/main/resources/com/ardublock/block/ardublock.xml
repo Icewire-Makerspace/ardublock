@@ -740,20 +740,6 @@
 		<BlockGenus name="random" kind="data" color="142 160 210"
 			initlabel="bg.random">
 			<description></description>
-			<description><text>Generate a random number from 0 to a maximum number (not including the maximum)</text></description>
-			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="plug" />
-				<BlockConnector connector-type="number"
-					connector-kind="socket" label="bc.max">
-					<DefaultArg genus-name="number" label="1024" />
-				</BlockConnector>
-			</BlockConnectors>
-		</BlockGenus>
-
-		<BlockGenus name="random_range" kind="data" color="142 160 210"
-			initlabel="bg.random_range">
-			<description></description>
 			<description><text>Generate a random number from a minimum number (inclusive) to a maximum number (exclusive)</text></description>
 			<BlockConnectors>
 				<BlockConnector connector-type="number"
@@ -999,7 +985,6 @@
 				type="factory">
 				<BlockGenusMember>delay</BlockGenusMember>
 				<BlockGenusMember>random</BlockGenusMember>
-				<BlockGenusMember>random_range</BlockGenusMember>
 				<BlockGenusMember>serial_println</BlockGenusMember>
 				<BlockGenusMember>message</BlockGenusMember>
 				<BlockGenusMember>glue_sn</BlockGenusMember>

@@ -17,6 +17,9 @@ public class RandomBlock extends TranslatorBlock
 		String ret = "random( ";
 		TranslatorBlock translatorBlock = getRequiredTranslatorBlockAtSocket(0);
 		ret = ret + translatorBlock.toCode();
+		ret = ret + ", ";
+		translatorBlock = getRequiredTranslatorBlockAtSocket(1);
+		ret = ret + translatorBlock.toCode();
 		ret = ret + " )";
 		return codePrefix + ret + codeSuffix;
 	}
