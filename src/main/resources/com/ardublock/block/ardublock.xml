@@ -751,6 +751,24 @@
 			</BlockConnectors>
 		</BlockGenus>
 
+		<BlockGenus name="random_range" kind="data" color="142 160 210"
+			initlabel="bg.random_range">
+			<description></description>
+			<description><text>Generate a random number from a minimum number (inclusive) to a maximum number (exclusive)</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="plug" />
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="bc.min">
+					<DefaultArg genus-name="number" label="0" />
+				</BlockConnector>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="bc.max">
+					<DefaultArg genus-name="number" label="1024" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+
 		<BlockGenus name="millis" kind="data" color="142 160 210"
 			initlabel="bg.millis">
 			<description></description>
@@ -981,6 +999,7 @@
 				type="factory">
 				<BlockGenusMember>delay</BlockGenusMember>
 				<BlockGenusMember>random</BlockGenusMember>
+				<BlockGenusMember>random_range</BlockGenusMember>
 				<BlockGenusMember>delay_microseconds</BlockGenusMember>
 				<BlockGenusMember>millis</BlockGenusMember>
 				<BlockGenusMember>serial_println</BlockGenusMember>
