@@ -868,6 +868,15 @@
 		</BlockGenus>
 
 
+
+		<!-- Zumo Robot -->
+		<BlockGenus name="find_line" kind="command" color="10 10 10"
+			initlabel="bg.find_line">
+			<description></description>
+			<description><text>Calibrate the reflectance sensors to find a line</text></description>
+		</BlockGenus>
+
+
 	</BlockGenuses>
 
 	<BlockFamilies>
@@ -997,6 +1006,11 @@
 				<BlockGenusMember>wire_read</BlockGenusMember>
 				<BlockGenusMember>wire_isread</BlockGenusMember>
 			</BlockDrawer>
+			<BlockDrawer button-color="0 0 0" name="bd.zumo_robot"
+				type="factory">
+				<BlockGenusMember>find_line</BlockGenusMember>
+			</BlockDrawer>
+
 
 	
 			<!-- Shapes are automatically loaded as blocks in the Shapes drawer (see 
