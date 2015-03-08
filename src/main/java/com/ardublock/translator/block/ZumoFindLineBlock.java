@@ -5,10 +5,10 @@ import com.ardublock.translator.Translator;
 import com.ardublock.translator.block.exception.SocketNullException;
 import com.ardublock.translator.block.exception.SubroutineNotDeclaredException;
 
-public class FindLineBlock extends TranslatorBlock
+public class ZumoFindLineBlock extends TranslatorBlock
 {
 
-	public FindLineBlock(Long blockId, Translator translator, String codePrefix, String codeSuffix, String label)
+	public ZumoFindLineBlock(Long blockId, Translator translator, String codePrefix, String codeSuffix, String label)
 	{
 		super(blockId, translator, codePrefix, codeSuffix, label);
 	}
