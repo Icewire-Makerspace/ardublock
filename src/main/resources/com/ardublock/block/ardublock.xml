@@ -875,6 +875,28 @@
 			<description></description>
 			<description><text>Calibrate the reflectance sensors to find a line</text></description>
 		</BlockGenus>
+		<BlockGenus name="zumo_right_motor_speed" kind="command" color="10 10 10"
+			initlabel="bg.zumo_right_motor_speed">
+			<description></description>
+			<description><text>Set the speed of the right motor (-100 to 100)</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket">
+					<DefaultArg genus-name="number" label="100" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="zumo_left_motor_speed" kind="command" color="10 10 10"
+			initlabel="bg.zumo_left_motor_speed">
+			<description></description>
+			<description><text>Set the speed of the left motor (-100 to 100)</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket">
+					<DefaultArg genus-name="number" label="100" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
 
 
 	</BlockGenuses>
@@ -1009,6 +1031,8 @@
 			<BlockDrawer button-color="0 0 0" name="bd.zumo_robot"
 				type="factory">
 				<BlockGenusMember>zumo_find_line</BlockGenusMember>
+				<BlockGenusMember>zumo_right_motor_speed</BlockGenusMember>
+				<BlockGenusMember>zumo_left_motor_speed</BlockGenusMember>
 			</BlockDrawer>
 
 
