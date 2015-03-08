@@ -870,10 +870,16 @@
 
 
 		<!-- Zumo Robot -->
-		<BlockGenus name="zumo_find_line" kind="command" color="10 10 10"
-			initlabel="bg.zumo_find_line">
+		<BlockGenus name="zumo_left_motor_speed" kind="command" color="10 10 10"
+			initlabel="bg.zumo_left_motor_speed">
 			<description></description>
-			<description><text>Calibrate the reflectance sensors to find a line</text></description>
+			<description><text>Set the speed of the left motor (-100 to 100)</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket">
+					<DefaultArg genus-name="number" label="100" />
+				</BlockConnector>
+			</BlockConnectors>
 		</BlockGenus>
 		<BlockGenus name="zumo_right_motor_speed" kind="command" color="10 10 10"
 			initlabel="bg.zumo_right_motor_speed">
@@ -886,15 +892,36 @@
 				</BlockConnector>
 			</BlockConnectors>
 		</BlockGenus>
-		<BlockGenus name="zumo_left_motor_speed" kind="command" color="10 10 10"
-			initlabel="bg.zumo_left_motor_speed">
+		<BlockGenus name="zumo_find_line" kind="command" color="10 10 10"
+			initlabel="bg.zumo_find_line">
 			<description></description>
-			<description><text>Set the speed of the left motor (-100 to 100)</text></description>
+			<description><text>Calibrate the reflectance sensors to find a line</text></description>
+		</BlockGenus>
+		<BlockGenus name="zumo_line_left" kind="data" initlabel="bg.zumo_line_left"
+			color="10 10 10">
+			<description></description>
+			<description><text>Is the line to the left?</text></description>
 			<BlockConnectors>
-				<BlockConnector connector-type="number"
-					connector-kind="socket">
-					<DefaultArg genus-name="number" label="100" />
-				</BlockConnector>
+				<BlockConnector connector-kind="plug" connector-type="boolean"
+					position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="zumo_line_right" kind="data" initlabel="bg.zumo_line_right"
+			color="10 10 10">
+			<description></description>
+			<description><text>Is the line to the right?</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-kind="plug" connector-type="boolean"
+					position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="zumo_line_middle" kind="data" initlabel="bg.zumo_line_middle"
+			color="10 10 10">
+			<description></description>
+			<description><text>Is the line in the middle?</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-kind="plug" connector-type="boolean"
+					position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
 
@@ -1030,9 +1057,12 @@
 			</BlockDrawer>
 			<BlockDrawer button-color="0 0 0" name="bd.zumo_robot"
 				type="factory">
-				<BlockGenusMember>zumo_find_line</BlockGenusMember>
-				<BlockGenusMember>zumo_right_motor_speed</BlockGenusMember>
 				<BlockGenusMember>zumo_left_motor_speed</BlockGenusMember>
+				<BlockGenusMember>zumo_right_motor_speed</BlockGenusMember>
+				<BlockGenusMember>zumo_find_line</BlockGenusMember>
+				<BlockGenusMember>zumo_line_left</BlockGenusMember>
+				<BlockGenusMember>zumo_line_right</BlockGenusMember>
+				<BlockGenusMember>zumo_line_middle</BlockGenusMember>
 			</BlockDrawer>
 
 

@@ -14,15 +14,13 @@ public class ZumoLeftMotorSpeedBlock extends TranslatorBlock
 
 	public String toCode() throws SocketNullException, SubroutineNotDeclaredException
 	{
-		translator.addHeaderFile("QTRSensors.h");
-		translator.addHeaderFile("ZumoReflectanceSensorArray.h");
 		translator.addHeaderFile("ZumoMotors.h");
 
 		translator.addDefinitionCommand("ZumoMotors motors;");
 
 		TranslatorBlock translatorBlock = this.getRequiredTranslatorBlockAtSocket(0);
 		String ret;
-		ret = "motors.setLeftSpeed(map(" + translatorBlock.toCode() + ", -100, 100, -400, 400));\n";
+		ret = "motors.setLeftSpeed(map(constrain(" + translatorBlock.toCode() + ", -100, 100), -100, 100, -200, 200));\n";
 
 		return ret;
 	}
