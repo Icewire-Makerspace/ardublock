@@ -107,32 +107,6 @@
 			<BlockConnectors>
 				<BlockConnector connector-type="string"
 					connector-kind="plug" />
-				<BlockConnector connector-type="string"
-					connector-kind="socket" />
-			</BlockConnectors>
-		</BlockGenus>
-
-		<BlockGenus name="glue_sn" kind="data" color="127 127 127"
-			initlabel="bg.glue_sn">
-			<description></description>
-			<description><text>Glue number to Serial println</text></description>
-			<BlockConnectors>
-				<BlockConnector connector-type="string"
-					connector-kind="plug" />
-				<BlockConnector connector-type="number"
-					connector-kind="socket" />
-			</BlockConnectors>
-		</BlockGenus>
-
-		<BlockGenus name="glue_sb" kind="data" color="127 127 127"
-			initlabel="bg.glue_sb">
-			<description></description>
-			<description><text>Glue boolean/digital to Serial println</text></description>
-			<BlockConnectors>
-				<BlockConnector connector-type="string"
-					connector-kind="plug" />
-				<BlockConnector connector-type="boolean"
-					connector-kind="socket" />
 			</BlockConnectors>
 		</BlockGenus>
 
@@ -765,16 +739,42 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="serial_println" kind="command" color="142 160 210"
-			initlabel="bg.serial_println">
+		<BlockGenus name="serial_print_message" kind="command" color="142 160 210"
+			initlabel="bg.serial_print_message">
 			<description></description>
-			<description><text>Send data to the serial port</text></description>
+			<description><text>Send a message to the serial port</text></description>
 			<BlockConnectors>
 				<BlockConnector connector-type="string"
 					connector-kind="socket">
 					<DefaultArg genus-name="message" label="message" />
 				</BlockConnector>
 			</BlockConnectors>
+		</BlockGenus>
+
+		<BlockGenus name="serial_print_digital" kind="command" color="142 160 210"
+			initlabel="bg.serial_print_digital">
+			<description></description>
+			<description><text>Send a digital value to the serial port</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-type="boolean"
+					connector-kind="socket" />
+			</BlockConnectors>
+		</BlockGenus>
+
+		<BlockGenus name="serial_print_analog" kind="command" color="142 160 210"
+			initlabel="bg.serial_print_analog">
+			<description></description>
+			<description><text>Send an analog value to the serial port</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" />
+			</BlockConnectors>
+		</BlockGenus>
+
+		<BlockGenus name="serial_println" kind="command" color="142 160 210"
+			initlabel="bg.serial_println">
+			<description></description>
+			<description><text>Send a line break to the serial port</text></description>
 		</BlockGenus>
 
 		<BlockGenus name="map_common" kind="data" color="142 160 210"
@@ -1043,10 +1043,11 @@
 				type="factory">
 				<BlockGenusMember>delay</BlockGenusMember>
 				<BlockGenusMember>random</BlockGenusMember>
+				<BlockGenusMember>serial_print_message</BlockGenusMember>
+				<BlockGenusMember>serial_print_digital</BlockGenusMember>
+				<BlockGenusMember>serial_print_analog</BlockGenusMember>
 				<BlockGenusMember>serial_println</BlockGenusMember>
 				<BlockGenusMember>message</BlockGenusMember>
-				<BlockGenusMember>glue_sn</BlockGenusMember>
-				<BlockGenusMember>glue_sb</BlockGenusMember>
 				<BlockGenusMember>map_common</BlockGenusMember>
 				<BlockGenusMember>map</BlockGenusMember>
 				<BlockGenusMember>delay_microseconds</BlockGenusMember>
