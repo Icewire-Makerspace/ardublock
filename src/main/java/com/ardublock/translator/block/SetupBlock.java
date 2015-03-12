@@ -18,7 +18,7 @@ public class SetupBlock extends TranslatorBlock
 		{
 			String setupCode;
 			setupCode = translatorBlock.toCode();
-			translator.addSetupCommand(setupCode);
+			translator.addSetupAfterCommand(setupCode);
 			translatorBlock = translatorBlock.nextTranslatorBlock();
 		}
 		return "";
