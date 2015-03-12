@@ -28,6 +28,7 @@ public class Translator
 	private Set<String> setupSet;
 	private Set<String> functionNameSet;
 	private BlockAdaptor blockAdaptor;
+	private List<String> setupAfter;
 	
 	private Set<String> inputPinSet;
 	private Set<String> outputPinSet;
@@ -102,6 +103,14 @@ public class Translator
 				headerCommand.append(command + "\n");
 			}
 		}
+
+		if (!setupAfter.isEmpty())
+		{
+			for (String command:setupAfter)
+			{
+				headerCommand.append(command + "\n");
+			}
+		}
 		
 		headerCommand.append("}\n\n");
 		return headerCommand.toString();
@@ -140,6 +149,7 @@ public class Translator
 		functionNameSet = new LinkedHashSet<String>();
 		inputPinSet = new LinkedHashSet<String>();
 		outputPinSet = new LinkedHashSet<String>();
+		setupAfter = new LinkedList<String>();
 		
 		numberVariableSet = new HashMap<String, String>();
 		booleanVariableSet = new HashMap<String, String>();
@@ -166,6 +176,11 @@ public class Translator
 	public void addSetupCommand(String command)
 	{
 		setupSet.add(command);
+	}
+
+	public void addSetupAfterCommand(String command)
+	{
+		setupAfter.add(command);
 	}
 	
 	public void addDefinitionCommand(String command)
