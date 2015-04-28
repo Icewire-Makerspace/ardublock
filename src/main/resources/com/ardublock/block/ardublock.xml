@@ -313,6 +313,20 @@
 			</BlockConnectors>
 		</BlockGenus>
 
+		<BlockGenus name="pin-read-digital-pullup" kind="data" color="77 191 169"
+			initlabel="bg.pin-read-digital-pullup">
+			<description></description>
+			<description><text>Read digital value from a pin with a pullup resistor</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-type="number"
+					connector-kind="socket" label="#">
+					<DefaultArg genus-name="number" label="2" />
+				</BlockConnector>
+				<BlockConnector connector-type="boolean"
+					connector-kind="plug" />
+			</BlockConnectors>
+		</BlockGenus>
+
 
 
 		<BlockGenus name="if" kind="command" initlabel="bg.if"
@@ -924,6 +938,15 @@
 					position-type="mirror" />
 			</BlockConnectors>
 		</BlockGenus>
+		<BlockGenus name="zumo_button" kind="data" initlabel="bg.zumo_button"
+			color="10 10 10">
+			<description></description>
+			<description><text>Read the button value</text></description>
+			<BlockConnectors>
+				<BlockConnector connector-kind="plug" connector-type="boolean"
+					position-type="mirror" />
+			</BlockConnectors>
+		</BlockGenus>
 
 
 	</BlockGenuses>
@@ -996,6 +1019,7 @@
 				<BlockGenusMember>tone</BlockGenusMember>
 				<BlockGenusMember>tone_time</BlockGenusMember>
 				<BlockGenusMember>no_tone</BlockGenusMember>
+				<BlockGenusMember>pin-read-digital-pullup</BlockGenusMember>
 			</BlockDrawer>
 
 			<BlockDrawer button-color="182 85 52" name="bd.number"
@@ -1064,6 +1088,7 @@
 				<BlockGenusMember>zumo_line_left</BlockGenusMember>
 				<BlockGenusMember>zumo_line_right</BlockGenusMember>
 				<BlockGenusMember>zumo_line_middle</BlockGenusMember>
+				<BlockGenusMember>zumo_button</BlockGenusMember>
 			</BlockDrawer>
 
 
